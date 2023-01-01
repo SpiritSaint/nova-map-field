@@ -4,7 +4,7 @@
             <ol-view :center="center" :rotation="rotation" :zoom="zoom" :projection="projection" />
 
             <ol-tile-layer>
-                <ol-source-osm :url="'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'" />
+                <ol-source-osm :url="'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'" />
             </ol-tile-layer>
 
             <ol-vector-layer>

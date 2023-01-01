@@ -1,8 +1,8 @@
 <template>
     <div>
-        <DefaultButton @click="showModal" dusk="open-preview-button">
-            {{ __('Show Details') }}
-        </DefaultButton>
+<!--        <DefaultButton @click="showModal" dusk="open-preview-button">-->
+<!--            {{ __('Show Details') }}-->
+<!--        </DefaultButton>-->
 
         <Modal
             @close-via-escape="closeModal"

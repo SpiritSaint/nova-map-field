@@ -10,7 +10,7 @@
             />
 
             <ol-tile-layer>
-                <ol-source-osm :url="'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'" />
+                <ol-source-osm :url="'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png'" />
             </ol-tile-layer>
 
             <ol-vector-layer :style="vectorStyle">
@@ -82,7 +82,7 @@ export default {
 
             if (values.length) {
                 const coordinates = values.map(value => {
-                    return value[0].map(v => fromLonLat([v[1], v[0]]))
+                    return value[0].map(v => fromLonLat([v[0], v[1]]))
                 })
 
                 this.center = this.initFeatures(coordinates)

@@ -32,7 +32,7 @@ class MapMultiPolygonField extends Field
                     $points = [];
 
                     foreach ($polygon as $coordinate) {
-                        $points[] = new Point($coordinate[0], $coordinate[1]);
+                        $points[] = new Point($coordinate[1], $coordinate[0],4326);
                     }
 
                     $multiPolygon[] = new Polygon([
